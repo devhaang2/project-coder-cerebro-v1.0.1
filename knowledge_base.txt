@@ -1,0 +1,63 @@
+Visão Geral da Aplicação
+Este é um sistema de chatbot sofisticado alimentado por IA, especializado em estratégia de branding e design, construído com Python e Streamlit. O sistema utiliza uma arquitetura multiagente para processar e responder às consultas dos usuários.
+
+Componentes-Chave
+Componentes Principais
+app.py: Ponto de entrada principal da aplicação usando o Streamlit
+text_processor.py: Gerencia o processamento de texto e interações com APIs
+agent_processor.py: Gerencia o sistema multiagente
+orchestrator_agent.py: Coordena as interações entre os agentes
+Sistema de Agentes
+Múltiplos agentes especializados com diferentes funções:
+Analisador: Análise estratégica de branding
+Gerador: Desenvolvimento de soluções
+Revisor: Refinamento estratégico
+Otimizador: Otimização de conteúdo
+Verificador: Validação estratégica
+Finalizador: Preparação para entrega
+Recursos Principais
+Pipeline de processamento multiagente
+Limitação de taxa e gerenciamento de tokens
+Sistema de cache para respostas
+Suporte para upload de arquivos (PDF, XML, CSV)
+Gerenciamento do histórico de conversas
+Processamento sensível ao contexto
+Capacidades de processamento paralelo
+Capacidades Técnicas
+Processamento de texto em blocos
+Execução em threads para grandes entradas
+Tratamento de erros e mecanismos de tentativa
+Cache de respostas
+Limitação de taxa
+Armazenamento em banco de dados para conversas
+Gerenciamento de Dados
+database.py: Banco de dados SQLite para armazenar:
+Conversas
+Conteúdo de arquivos
+Interações do usuário
+Histórico de processamento
+Configuração
+Variáveis de ambiente para chaves de API
+Parâmetros de processamento personalizáveis
+Limites de taxa ajustáveis
+Comportamentos de agentes configuráveis
+Fluxo de Processamento
+Entrada do usuário recebida através da interface do Streamlit
+Entrada analisada quanto ao contexto e tipo
+O orquestrador planeja a estratégia de execução
+Múltiplos agentes processam a entrada sequencialmente ou em paralelo
+Resultados combinados e refinados
+Resposta final formatada e apresentada ao usuário
+Recursos de Desempenho
+Processamento concorrente com ThreadPoolExecutor
+Mecanismo de cache para consultas repetidas
+Limitação de taxa para gerenciar o uso de API
+Logging antecipado para operações de banco de dados
+Processamento em blocos para grandes entradas
+Segurança e Confiabilidade
+Tratamento de erros em vários níveis
+Mecanismos de tentativa para chamadas de API
+Validação e sanitização de entrada
+Gerenciamento seguro de chaves de API
+Pool de conexões de banco de dados
+Esta aplicação representa uma implementação sofisticada de um sistema de chatbot multiagente, especificamente projetada para consultas de estratégia de branding e design, com recursos técnicos robustos para confiabilidade e escalabilidade.
