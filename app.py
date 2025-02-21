@@ -74,13 +74,6 @@ def save_conversation(conversation_name: str, messages: list[dict]):
     except Exception as e:
         st.error(f"Erro ao salvar conversa: {str(e)}")
 
-def count_tokens(text: str, model_name: str = "mistral") -> int:
-    try:
-        encoding = tiktoken.encoding_for_model(model_name)
-        return len(encoding.encode(text))
-    except KeyError:
-        return len(text.split())
-
 class OpenRouterChat:
     def __init__(self, api_key: str, model: str, site_url: str, site_name: str):
         self.api_key = api_key
